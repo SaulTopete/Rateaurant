@@ -22,7 +22,7 @@
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.966" />
+        app:layout_constraintVertical_bias="0.794" />
 
     <EditText
         android:id="@+id/edittext_activityrestaurant_cuisine"
@@ -43,13 +43,13 @@
         android:id="@+id/edittext_activityrestaurant_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Address"
-        app:layout_constraintBottom_toTopOf="@+id/ratingbar_activityrestaurant_rating"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_activityrestaurant_website"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent" />
@@ -58,7 +58,7 @@
         android:id="@+id/ratingbar_activityrestaurant_rating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="20dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toTopOf="@+id/spinner_activityrestaurant_spinny"
@@ -69,12 +69,40 @@
         android:id="@+id/spinner_activityrestaurant_spinny"
         android:layout_width="145dp"
         android:layout_height="29dp"
-        android:layout_marginBottom="188dp"
+        android:layout_marginBottom="12dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_activityrestaurant_save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edittext_activityrestaurant_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Website"
+        app:layout_constraintBottom_toTopOf="@+id/ratingbar_activityrestaurant_rating"
+        tools:layout_editor_absoluteX="85dp" />
+
+    <Button
+        android:id="@+id/button_activityrestaurant_cancel"
+        android:layout_width="81dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="36dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="152dp" />
+
+    <Button
+        android:id="@+id/button_activityrestaurant_save"
+        android:layout_width="81dp"
+        android:layout_height="36dp"
+        android:text="SAVE"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="387dp" />
 
 </android.support.constraint.ConstraintLayout>
